@@ -1,0 +1,368 @@
+/* Basic Reset and Typography */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+
+  
+  body {
+    line-height: 1.6;
+    background-color: rgb(245, 244, 235);
+  }
+
+  .navbar{
+    background: rgb(240, 230, 215);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  label.logo{
+    color:#a27550;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+  }
+
+    .navbar ul{
+        float: right;
+        margin-right: 20px;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    
+    }
+
+    .navbar ul li a{
+        color: #a27550;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    
+    }
+
+    a.active, a:hover{
+        background: none;
+        transition: .5s;
+        border-radius: 3px;
+    }
+
+
+    /* Hamburger Menu */
+
+  .checkbtn{
+    font-size: 30px;
+    color: #a27550;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+
+
+
+  
+
+  
+  /* Product Section */
+   .product-section {
+    justify-content: center;
+    text-align: center;
+  } 
+  
+  .product-section img {
+    display: block;
+    margin: 0 auto;
+    object-position: center;
+    object-fit: cover;
+    height: 700px;
+    max-width: 100%;
+    
+    
+  }
+
+
+   .price-display{
+    font-size: 24px;
+    color: #a27550;
+    margin-bottom: 15px;
+    text-align: center;
+  } 
+
+  .product-info{
+    color: #a27550;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 20px;
+
+  }
+
+  .product-info p{
+    color: #a27550;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .product-section .product-image{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    height: 700px;
+  }
+
+
+
+  .product-section .product-info h2{
+    color: #a27550;
+    font-size: 24px;
+    margin-bottom: 15px;
+    
+    text-align: center;
+
+  }
+
+
+  
+  #buildyourbottleBtn{
+    padding: 10px 20px;
+
+    background-color: #a27550;
+    color: rgb(245, 244, 235);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  #sealthecalmBtn{
+    padding: 10px 20px;
+    background-color: #a27550;
+    color: rgb(245, 244, 235);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .price-display {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: left;
+  }
+
+  .modal-content h3 {
+    margin-bottom: 12pxx;
+    margin-top: 0;
+    font-size: 24px;
+    color: #a27550;
+    text-align: center;
+    text-transform: uppercase;
+  font-weight: bold;
+    
+  }
+  .modal-content h4{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #a27550;
+    text-align: center;
+  }
+
+  .modal-content p {
+    margin-bottom: 1rem;
+    color: #a27550;
+  }
+
+  .modal-content p span{
+    font-weight: bold;
+    
+    color: #a27550;
+  }
+
+  label[for="color"] {
+    color: #a27550;  /* or any color you like */
+    font-weight: bold;
+  }
+  label[for="engraving"] {
+    color: #a27550;  /* or any color you like */
+    
+  }
+  label[for="gift-wrap"] {
+    color: #a27550;  /* or any color you like */
+    ;
+  }
+
+
+
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Footer Contact Form */
+  footer {
+    padding: 2rem;
+    background: rgb(245, 244, 235) ;
+    color: #a27550;
+    text-align: center;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  footer input, footer textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+  
+  footer button {
+    background: #a27550;
+    color: rgb(245, 244, 235);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsive Design */
+
+  @media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+
+    .navbar ul li{
+        font-size: 16px;
+
+    }
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(245, 244, 235);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+
+    .navbar a:hover , a.active{
+        background: none;
+        transition: .5s;
+        color: rgb(240, 230, 215);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .product-section{
+        img{
+            height: calc(100vh - 80px);
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+  }
+   @media (max-width: 700px) {
+    .product-section {
+      flex-direction: column;
+    }
+
+    @media (min-width: 1200px) {
+        .product-section {
+          justify-content: center;
+          align-items: center;
+          object-fit: cover;
+            padding: 2rem;  
+
+        }
+      
+        .product-image,
+        .product-info {
+          max-width: 500px;
+        }
+      }}
+  
+   /*.nav-links {
+      flex-direction: row;
+      gap: 0.6rem;
+    
+    } */
